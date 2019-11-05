@@ -16,6 +16,21 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
@@ -26,23 +41,53 @@
         <p id="currentDay" class="lead"></p>
       </header>
     </header>
-    <div class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Time</th>
-            <th scope="col">Apponintment</th>
-            <th scope="col">save btn</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-          </tr>
-        </tbody>
-      </table>
+
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-2 mt-4 time-block">9:00 AM</div>
+        <textarea class="col-8 first entertext e9"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b9"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">10:00 AM</div>
+        <textarea class="col-8 e10"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b10"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">11:00 AM</div>
+        <textarea class="col-8 e11"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b11"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">12:00 PM</div>
+        <textarea class="col-8 e12"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b12"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">1:00 PM</div>
+        <textarea class="col-8 e1"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b1"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">2:00 PM</div>
+        <textarea class="col-8 e2"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b2"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">3:00 PM</div>
+        <textarea class="col-8 e3"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b3"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">4:00 PM</div>
+        <textarea class="col-8 e4"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b4"></button>
+      </div>
+      <div class="row">
+        <div class="col-2 mt-4 time-block">5:00 PM</div>
+        <textarea class="col-8 e5"></textarea>
+        <button class="col-1 saveBtn fa fa-calendar-check-o b5"></button>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -63,10 +108,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="lib/moment/moment.min.js"></script>
-    <script>
-      console.log(moment());
-      // moment().format();
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
