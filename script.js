@@ -37,4 +37,35 @@ $(document).ready(function() {
     }
   }
   rowRender();
+
+  $("#b8").click(function() {
+    alert("works");
+  });
+  $("#b9").click(function() {
+    alert("works");
+  });
+  $("#b10").click(function() {
+    alert("works");
+  });
+  $("#b11").click(function() {
+    alert("works");
+  });
+  $("#b12").click(function() {
+    alert("works");
+  });
+  $("#b1").click(function() {
+    alert("works");
+  });
+  $("#b2").click(function() {
+    alert("works");
+  });
+  $("#b3").click(function() {
+    alert("works");
+  });
+  $("#b4").click(function() {
+    alert("works");
+  });
+  $("#b5").click(function() {
+    alert("works");
+  });
 });
