@@ -7,25 +7,20 @@ $(document).ready(function() {
   $("#currentDay").text(m.format("dddd[,] MMMM Do"));
 
   var currentHr = m.hour();
-  console.log(currentHr);
-  console.log(m.toString);
-
-  var h = 0;
 
   function rowRender() {
-    // let m = moment();
     var i = 0;
-
     for (r = 0; r < 10; r++) {
-      //   dynamicaly create new calander rows//
+      //   dynamicaly creates and styles 9 new calander rows//
       var newRow = $("<div>").attr("class", "row");
-      //   creates the hour,textarea and button columns//
+      //   creates, styles,  hour,textarea and button column also adds incremented id's and text //
       var hrCol = $("<div>")
         .attr("class", "col-2 mt-4 time-block")
         .text(workHrs[i] + ":00");
       var aptCol = $("<textarea>")
         .attr("class", "col-8 first entertext")
-        .attr("id", "e" + workHrs[i]);
+        .attr("id", "e" + workHrs[i])
+        .text(localStorage.getItem("e" + workHrs[i])); //checks local storage for the e# value and enters the key if present//
       var btnCol = $("<button>")
         .attr("class", "col-1 saveBtn fa fa-calendar-check-o")
         .attr("id", "b" + workHrs[i]);
@@ -38,34 +33,54 @@ $(document).ready(function() {
   }
   rowRender();
 
+  //   event listner for the save button//
   $("#b8").click(function() {
-    alert("works");
+    var entertext = $("#e8").val();
+    localStorage.setItem("e8", entertext);
   });
+
   $("#b9").click(function() {
-    alert("works");
+    var entertext = $("#e9").val();
+    localStorage.setItem("e9", entertext);
   });
+
   $("#b10").click(function() {
-    alert("works");
+    var entertext = $("#e10").val();
+    localStorage.setItem("e10", entertext);
   });
+
   $("#b11").click(function() {
-    alert("works");
+    var entertext = $("#e11").val();
+    localStorage.setItem("e11", entertext);
   });
+
   $("#b12").click(function() {
-    alert("works");
+    var entertext = $("#e12").val();
+    localStorage.setItem("e12", entertext);
   });
+
   $("#b1").click(function() {
-    alert("works");
+    var entertext = $("#e1").val();
+    localStorage.setItem("e1", entertext);
   });
+
   $("#b2").click(function() {
-    alert("works");
+    var entertext = $("#e2").val();
+    localStorage.setItem("e2", entertext);
   });
+
   $("#b3").click(function() {
-    alert("works");
+    var entertext = $("#e3").val();
+    localStorage.setItem("e3", entertext);
   });
+
   $("#b4").click(function() {
-    alert("works");
+    var entertext = $("#e4").val();
+    localStorage.setItem("e4", entertext);
   });
+
   $("#b5").click(function() {
-    alert("works");
+    var entertext = $("#e5").val();
+    localStorage.setItem("e5", entertext);
   });
 });
