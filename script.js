@@ -33,6 +33,25 @@ $(document).ready(function() {
   }
   rowRender();
 
+  function hourupdater() {
+    var currenthour = moment().hours();
+    $(".time-block").each(function() {
+      console.log(this);
+      if (blockhour < currenthour) {
+        $(this).addClass("past");
+      } else if (blockhour === currenthour) {
+        $(this).removeClass("past");
+        $(this).addClass("present");
+      } else {
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+      }
+    });
+  }
+  hourupdater();
+  var interval = setInterval(hourUpdater, 15000);
+
   //   event listner for the save button//
   $("#b8").click(function() {
     var entertext = $("#e8").val();
