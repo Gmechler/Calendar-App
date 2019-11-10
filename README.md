@@ -9,3 +9,5 @@
 - The current day is displayed at the top of the calendar.
 
 - Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+
+I enjoyed this

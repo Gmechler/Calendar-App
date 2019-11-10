@@ -1,3 +1,5 @@
+var theAnswerToLifeTheUniverseAndEverything = "42";
+
 $(document).ready(function() {
   //   creates an array of hours from 8am to 5pm
   var workHrs = [8, 9, 10, 11, 12, 1, 2, 3, 4, 5];
@@ -28,18 +30,26 @@ $(document).ready(function() {
       newRow.append(hrCol, aptCol, btnCol);
       // appends the new row to the main container add id="mainContainer" to the top container.//
       $("#mainContainer").append(newRow);
-      i++;
+      ++i;
     }
   }
   rowRender();
 
   function hourupdater() {
-    var currenthour = moment().hours();
+    var currentHour = moment().hours();
     $(".time-block").each(function() {
-      console.log(this);
-      if (blockhour < currenthour) {
+      var blockTime = parseInt(
+        $(this)
+          .text()
+          .split(":")[0]
+      );
+      if (blockTime < 8) {
+        blockTime = blockTime + 12;
+      }
+      console.log(blockTime);
+      if (blockTime < currentHour) {
         $(this).addClass("past");
-      } else if (blockhour === currenthour) {
+      } else if (blockTime === currentHour) {
         $(this).removeClass("past");
         $(this).addClass("present");
       } else {
