@@ -36,6 +36,7 @@ $(document).ready(function() {
   rowRender();
 
   function hourupdater() {
+    // if you are looking at this after 5:00pm comment out moment().hours() and replace with a number 8-5.
     var currentHour = moment().hours();
     $(".time-block").each(function() {
       var blockTime = parseInt(

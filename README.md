@@ -1,3 +1,5 @@
+**if you are looking at this after 5:00pm comment out moment().hours() on script.js line 40 and replace with a number 8-5.>**
+
 # Calendar-App
 
 - The application displays timeblocks for standard business hours (8 a.m. to 5 p.m.).
