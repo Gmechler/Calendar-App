@@ -17,14 +17,14 @@ $(document).ready(function() {
       var newRow = $("<div>").attr("class", "row");
       //   creates, styles,  hour,textarea and button column also adds incremented id's and text //
       var hrCol = $("<div>")
-        .attr("class", "col-2 mt-4 time-block")
+        .attr("class", "col-2 my-4 time-block")
         .text(workHrs[i] + ":00");
       var aptCol = $("<textarea>")
         .attr("class", "col-8 first entertext")
         .attr("id", "e" + workHrs[i])
         .text(localStorage.getItem("e" + workHrs[i])); //checks local storage for the e# value and enters the key if present//
       var btnCol = $("<button>")
-        .attr("class", "col-1 saveBtn fa fa-calendar-check-o")
+        .attr("class", "col-1 saveBtn saveBtn i:hover fa fa-calendar-check-o")
         .attr("id", "b" + workHrs[i]);
       //   appends the columns to the new row//
       newRow.append(hrCol, aptCol, btnCol);
@@ -59,8 +59,8 @@ $(document).ready(function() {
       }
     });
   }
+
   hourupdater();
-  var interval = setInterval(hourUpdater, 15000);
 
   //   event listner for the save button//
   $("#b8").click(function() {
